@@ -1,0 +1,41 @@
+---
+name: Task
+description: Request a small, quick task that can be completed within an hour
+projects: minrefusion/5
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for small tasks that can be completed within less than an hour and don't result in any code changes. Examples: Reopening absences, database extracts to Excel, documentation updates, etc.
+        
+        If your request is larger in scope, please use one of the other issue templates.
+
+        Feel free to write in Danish.
+  
+  - type: textarea
+    id: accomplishment
+    attributes:
+      label: What needs to be accomplished?
+      description: Provide a clear description of what needs to be done.
+      placeholder: Describe the task that needs to be completed...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: What specific deliverables are expected?
+      description: List the exact outputs or results you expect from this task.
+      placeholder: "Example: Excel file with user data, summary report, updated documentation, etc."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other relevant information, requirements, or constraints.
+      placeholder: Any additional information that might be helpful...
+    validations:
+      required: false

@@ -1,0 +1,81 @@
+---
+name: Feature request
+description: Suggest a new feature or enhancement
+projects: minrefusion/5
+type: Enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for taking the time to suggest a new feature!
+        
+        Please fill out the information below to help us understand your request.
+
+        Feel free to answer in Danish.
+  
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the underlying problem or pain point you're experiencing. Focus on the "why" rather than the "what" - don't describe what you expect the system to do here.
+      placeholder: Explain the problem you're facing...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: current-workflow
+    attributes:
+      label: What's your current workflow for handling this?
+      description: Explain how you currently accomplish this task or work around the limitation.
+      placeholder: Describe your current process...
+    validations:
+      required: false
+  
+  - type: textarea
+    id: ideal-solution
+    attributes:
+      label: Describe your ideal solution
+      description: What would the perfect solution look like? Be as specific as possible about the functionality you envision.
+      placeholder: Explain your ideal solution...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: beneficiaries
+    attributes:
+      label: Who would benefit from this feature?
+      description: Identify the target users - developers, customers, account managers, administrators, etc.
+      placeholder: Who are the target users?
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often would this be used by you, other employees or customers?
+      description: Help us understand the frequency and impact
+      options:
+        - Daily
+        - Weekly
+        - Monthly
+        - Less often
+    validations:
+      required: true
+  
+  - type: textarea
+    id: workarounds
+    attributes:
+      label: Have you tried any workarounds?
+      description: Describe any temporary solutions or alternatives you've attempted.
+      placeholder: List any workarounds you've tried...
+    validations:
+      required: false
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context, screenshots, mockups, or examples that might help explain the feature request.
+      placeholder: Any additional information...
+    validations:
+      required: false

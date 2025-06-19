@@ -1,0 +1,104 @@
+---
+name: Bug report
+description: Report a bug to help us improve
+assignees: cconrad
+projects: minrefusion/5
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for taking the time to fill out this bug report!
+        
+        Please provide as much detail as possible to help us understand and resolve the issue.
+        
+        Feel free to answer in Danish.
+
+  - type: textarea
+    id: what-trying-to-achieve
+    attributes:
+      label: What were you trying to achieve when this happened?
+      description: Please describe what you were attempting to do when the bug occurred.
+      placeholder: I was trying to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What did you expect to happen?
+      description: Describe what you expected to happen.
+      placeholder: I expected...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: What actually happened instead?
+      description: Describe what actually happened instead of the expected behavior. If there are any visible errors, please paste/attach a screenshot or video.
+      placeholder: Instead, what happened was...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser-os
+    attributes:
+      label: Browser and Operating System (if applicable)
+      description: If this is a web-related issue, please select your browser and operating system combination.
+      options:
+        - Chrome on macOS
+        - Chrome on Windows
+        - Chrome on Linux
+        - Chrome on Android
+        - Chrome on iOS
+        - Firefox on macOS
+        - Firefox on Linux
+        - Firefox on Android
+        - Firefox on iOS
+        - Safari on macOS
+        - Safari on iOS
+        - Edge on macOS
+        - Edge on Windows
+        - Edge on Linux
+        - Other (please specify in additional details)
+    validations:
+      required: false
+
+  - type: input
+    id: page-url
+    attributes:
+      label: Link to the page where the error occurred (if applicable)
+      description: Please provide the URL where you encountered this issue.
+      placeholder: https://example.com/page-with-issue?id=123
+    validations:
+      required: false
+
+  - type: textarea
+    id: error-details
+    attributes:
+      label: Error message (if applicable)
+      description: Please paste any error messages.
+      placeholder: |
+        Paste error message here
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: "How is this affecting your or the customer's work/usage?"
+      description: Please describe the impact this bug has on your work or customer experience.
+      placeholder: This is blocking us from...
+    validations:
+      required: true
+
+  - type: input
+    id: affected-users
+    attributes:
+      label: How many employees/customers are affected?
+      description: Please provide an estimate of how many people are impacted by this issue.
+      placeholder: e.g., "5 employees", "approximately 100 customers", "unknown"
+    validations:
+      required: true
