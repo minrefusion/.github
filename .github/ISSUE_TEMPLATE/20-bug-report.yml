@@ -1,7 +1,6 @@
 ---
 name: Bug report
 description: Report a bug to help us improve
-assignees: cconrad
 projects: minrefusion/5
 type: Bug
 body:
