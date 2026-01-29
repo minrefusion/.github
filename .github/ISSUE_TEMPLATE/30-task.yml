@@ -1,5 +1,5 @@
 ---
-name: Task
+name: Ad-hoc extract/report
 description: Request a small, quick task that can be completed within an hour
 projects: minrefusion/5
 type: Task
@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this template for small tasks that can be completed within less than an hour and don't result in any code changes. Examples: Reopening absences, database extracts to Excel, documentation updates, etc.
+        Use this template for small tasks that can be completed within less than an hour and don't result in any code changes. Examples: Database extracts to Excel, documentation updates, etc.
         
         If your request is larger in scope, please use one of the other issue templates.
 
